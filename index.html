@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Soham Pahari</title>
+        <link rel="icon" type="images/x-icon" href="Screenshot_2023-01-31_020746-removebg-preview.png" />
+
+        <style>
+            @import 'http://fonts.googleapis.com/css?family=Titillium+Web:400,200';
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+html, body {
+	overflow: hidden;
+}
+	body {
+		font: 15px/25px "Titillium Web", Klavika, sans-serif;
+		text-shadow: 0 2px 1px rgba(0,0,0,0.4);
+		background: #567631;
+		color: #fff;
+	}
+
+h1 {
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 200;
+}
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+	
+	opacity: .5;
+	text-shadow: 0 1px 2px rgba(0,0,0,.8);
+}
+
+.left, .services {
+	position: absolute;
+
+	z-index: 2;
+}
+	.left {
+		left: 50px;
+		bottom: 33px;
+	}
+	.services {
+		right: 50px;
+		bottom: 50px;
+	}
+		.services li {
+			float: right;
+			list-style: none;
+			
+			padding-left: 20px;
+		}
+		.services .hidden {
+			opacity: 0;
+		}
+		.services a {
+			display: inline-block;
+			min-width: 15px;
+			opacity: .5;
+		}
+			.services a:hover {
+				opacity: 1;
+			}
+		
+.services a, #img {
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-ms-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
+}
+
+#img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 1;
+	opacity: 0;
+}
+	#img.on {
+		opacity: 1;
+	}
+           
+        </style>
+	</head>
+	<body>
+			<header class="left">
+		<h1>Soham Pahari</h1>
+				<h2 class="bio">B.Tech [CSE] Student at <i>University of Petrolume And Energy Studies</i></h2><br>
+	</header>
+
+	<ul class="services">
+				<li>
+			<a class="" href="https://twitter.com/SohamPahari" target="blank">
+				<img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" length="100px" width="100px alt="Logo for Twitter">
+			</a>
+		</li>
+				<li>
+			<a class="" href="https://github.com/suhanpahari" target="blank">
+				<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" length="100px" width="100px alt="Logo for Github">
+			</a>
+		</li>
+				<li>
+			<a class="" href="mailto:paharisuhan17@gmail.com" target="blank">
+				<img src="https://www.freeiconspng.com/thumbs/gmail-icon/gmail-logo-icon-2.png" length="100px" width="100px alt="Logo for Email">
+			</a>
+		</li>
+				<li>
+			<a class="" href="https://www.instagram.com/sohampahari/" target="blank">
+				<img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" length="100px" width="100px alt="Logo for instagram">
+			</a>
+		</li>
+					</ul>
+	<img id="img" src="https://wallpapercave.com/wp/wp7969211.jpg" class="on">
+
+</body></html>
