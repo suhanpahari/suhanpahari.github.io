@@ -1,0 +1,9 @@
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{% if page.date %}
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: date_format }}</time></p>
+{% endif %}
+{% if page.modified %}
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].modified_label | default: "Updated:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: date_format }}</time></p>
+{% elsif page.date %}
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].modified_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: date_format }}</time></p>
+{% endif %}

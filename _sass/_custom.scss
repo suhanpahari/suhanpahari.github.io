@@ -1,0 +1,301 @@
+/* ==========================================================================
+   CUSTOM CSS BY ME
+   ========================================================================== */
+
+/*
+   Visibility
+   ========================================================================== */
+
+   .zoom{
+    /* default button */
+    
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+
+  
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* overlay effect (full height and width) - lays on top of the container */
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: $dark-gray;
+  }
+  
+  /* When you mouse over the container, fade in the overlay */
+  .container:hover .overlay {
+    opacity: 0.25;
+  }
+
+/* makes a new link class*/
+.mdLink {
+  color: #0085a1;
+}
+.mdLink:hover,
+.mdLink:focus {
+  text-decoration: underline;
+  color: #00596B;
+}
+
+/* for summary lnks*/
+.info {
+  color: #AAC3C6;
+}
+
+.infoLink {
+  color: #AAC3C6;
+}
+.infoLink:hover,
+.infoLink:focus {
+  text-decoration: underline;
+  color: #00596B;
+}
+
+/* Lists : add more space between */
+body li{
+  margin: 10px 0;
+}
+
+/* adds custom tables based on macdown   */
+table {
+  padding: 0;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+ }
+
+table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0; }
+table tr:nth-child(2n) {
+  background-color: #f8f8f8; }
+table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  margin: 0;
+  padding: 6px 13px; }
+table tr td {
+  border: 1px solid #cccccc;
+  margin: 0;
+  padding: 6px 13px; }
+table tr th :first-child, table tr td :first-child {
+  margin-top: 0; }
+table tr th :last-child, table tr td :last-child {
+  margin-bottom: 0; }
+
+/* special words for special types */
+/* Intuition */
+.intuition {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #9B01DE;
+}
+
+.intuitionText {
+    color: #9B01DE;
+}
+
+.intuitionBoxed {
+    border: 1px dashed #9B01DE ;
+    padding: 17px;
+}
+
+/* Example */
+
+.example {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #9DCB05;
+}
+
+.exampleText {
+    color: #9DCB05;
+}
+
+.exampleBoxed {
+    border: 1px dashed #9DCB05 ;
+    padding: 17px;
+}
+
+/* Advantage */
+
+.advantage {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #0DBF01;
+}
+
+.advantageText {
+    color: #0DBF01;
+}
+
+.advantageBoxed {
+    border: 1px dashed #0DBF01 ;
+    padding: 17px;
+}
+
+/* Disadvantage */
+
+.disadvantage {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #ED0101;
+}
+
+.disadvantageText {
+    color: #ED0101;
+}
+
+.disadvantageBoxed {
+    border: 1px dashed #ED0101 ;
+    padding: 17px;
+}
+
+/* Practice */
+
+.practice {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #4997FE;
+}
+
+.practiceText {
+    color: #4997FE;
+}
+
+.practiceBoxed {
+    border: 1px dashed #4997FE ;
+    padding: 17px;
+}
+
+/* Notes */
+
+.note {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #C89917;
+}
+
+.noteText {
+    color: #C89917;
+}
+
+.noteBoxed {
+    border: 1px dashed #C89917 ;
+    padding: 17px;
+}
+
+/* Resources */
+
+.resources {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #C4C4C4;
+}
+
+.resourcesText {
+    color: #C4C4C4;
+}
+
+.resourcesBoxed {
+    border: 1px dashed #C4C4C4 ;
+    padding: 17px;
+}
+
+/* Compare */
+
+.compare {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #A47676
+}
+
+.compareText {
+    color: #A47676;
+}
+
+.compareBoxed {
+    border: 1px dashed #A47676;
+    padding: 17px;
+}
+
+
+/* images */
+body img:not(.emoji){
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.miniWrap{
+  max-width:200px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.smallWrap{
+  max-width:300px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.mediumWrap{
+  max-width:477px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* Quick annotations for algorithms */
+.centerContainer{
+  text-align: center;
+  float: none;
+  margin: 0 auto;
+}
+
+/* Justufy */
+p {
+  text-align: justify;
+}
+li {
+  text-align: justify;
+}
+
+/* Blockquotes */
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+/* For Dropdown menus */
+details summary{
+  text-decoration: underline;
+  font-weight: bold;
+  color: #999999;
+}
+
+details summary:hover,
+details summary:focus,
+details[open] summary{
+  text-decoration: underline;
+  color: black;
+}

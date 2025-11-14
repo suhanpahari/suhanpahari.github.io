@@ -1,0 +1,34 @@
+---
+layout: archive
+permalink: /categories/
+title: "Publications by Tags"
+author_profile: true
+---
+
+{% include base_path %}
+{% if site.category_archive.path %}
+{% include all-categories.html %}
+{% endif %}
+
+{% include group-by-array collection=site.publications field="categories" %}
+
+{% for category in group_names %}
+  {% if category == 'Selected Papers' %}
+    {% assign posts = group_items[forloop.index0] | sort: 'date' | reverse %}
+    <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+    {% for post in posts %}
+    {% include archive-single-publication.html %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% for category in group_names %}
+  {% if category != 'Selected Papers' %}
+    {% assign posts = group_items[forloop.index0] | sort: 'date' | reverse %}
+    <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+    {% for post in posts %}
+    {% include archive-single-publication.html %}
+    {% endfor %}
+    {% endif %}
+{% endfor %}
+

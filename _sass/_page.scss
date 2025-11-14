@@ -1,0 +1,679 @@
+/* ==========================================================================
+   SINGLE PAGE/POST
+   ========================================================================== */
+
+#main {
+  @include container;
+  @include clearfix;
+  margin-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  animation: intro 0.3s both;
+  animation-delay: 0.35s;
+
+  @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
+}
+
+.page {
+  @include breakpoint($large) {
+    @include span(10 of 12 last);
+    @include prefix(0.5 of 12);
+    @include suffix(2 of 12);
+  }
+
+  .page__inner-wrap {
+    @include full();
+
+    .page__content,
+    .page__meta,
+    .page__share {
+      @include full();
+    }
+  }
+}
+
+.page__title {
+  margin-top: 0;
+  line-height: 1;
+
+  & + .page__meta {
+    margin-top: -0.5em;
+  }
+}
+
+.page__lead {
+  font-family: $global-font-family;
+  font-size: $type-size-4;
+}
+
+.page__content {
+  h2 {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $border-color;
+  }
+
+  p,
+  li,
+  dl {
+    font-size: 1em;
+  }
+
+  /* paragraph indents */
+  p {
+    margin: 0 0 $indent-var;
+
+    /* sibling indentation*/
+    @if $paragraph-indent == true {
+      & + p {
+        text-indent: $indent-var;
+        margin-top: -($indent-var);
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+
+      img {
+        box-shadow: 0 0 10px rgba(#000, 0.25);
+      }
+    }
+  }
+
+  dt {
+    margin-top: 1em;
+    font-family: $sans-serif;
+    font-weight: bold;
+  }
+
+  dd {
+    margin-left: 1em;
+    font-family: $sans-serif;
+    font-size: $type-size-6;
+  }
+
+  .small {
+    font-size: $type-size-6;
+  }
+
+  /* blockquote citations */
+  blockquote + .small {
+    margin-top: -1.5em;
+    padding-left: 1.25rem;
+  }
+}
+
+.page__hero {
+  position: relative;
+  margin-bottom: 2em;
+  @include clearfix;
+  animation: intro 0.3s both;
+  animation-delay: 0.25s;
+
+  &--overlay {
+    position: relative;
+    margin-bottom: 2em;
+    padding: 3em 0;
+    @include clearfix;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: intro 0.3s both;
+    animation-delay: 0.25s;
+
+    a {
+      color: #fff;
+    }
+
+    .wrapper {
+      padding-left: 1em;
+      padding-right: 1em;
+
+      @include breakpoint($x-large) {
+        max-width: $x-large;
+      }
+    }
+
+    .page__title,
+    .page__meta,
+    .page__lead,
+    .btn {
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+    }
+
+    .page__lead {
+      max-width: $medium;
+    }
+
+    .page__title {
+      font-size: $type-size-2;
+
+      @include breakpoint($small) {
+        font-size: $type-size-1;
+      }
+    }
+  }
+}
+
+.page__hero-image {
+  width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+.page__hero-caption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 2px 5px;
+  color: #fff;
+  font-family: $caption-font-family;
+  font-size: $type-size-7;
+  background: #000;
+  text-align: right;
+  z-index: 5;
+  opacity: 0.5;
+  border-radius: $border-radius 0 $border-radius 0;
+
+  @include breakpoint($large) {
+    padding: 5px 10px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/*
+   Social sharing
+   ========================================================================== */
+
+.page__share {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
+
+  @include breakpoint(max-width $small) {
+    .btn span {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  }
+}
+
+.page__share-title {
+  margin-bottom: 10px;
+  font-size: $type-size-6;
+  text-transform: uppercase;
+}
+
+/*
+   Page meta
+   ========================================================================== */
+
+.page__meta {
+  margin-top: 2em;
+  color: mix(#fff, $gray, 25%);
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.page__meta-title {
+  margin-bottom: 10px;
+  font-size: $type-size-6;
+  text-transform: uppercase;
+}
+
+/*
+   Page taxonomy
+   ========================================================================== */
+
+.page__taxonomy {
+  .sep {
+    display: none;
+  }
+
+  strong {
+    margin-right: 10px;
+  }
+}
+
+.page__taxonomy-item {
+  text-decoration: none !important;
+  background-color: #ccc;
+  color: #fff !important;
+  display: inline-block;
+  font-size: 0.5em;
+  font-weight: 700 !important;
+  line-height: 1.5em;
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  text-transform: uppercase;
+  vertical-align: 20%;
+  font-family: "Open Sans", sans-serif;
+  border-radius: $border-radius;
+
+  &:hover {
+    color: #fff;
+    background-color: $link-color !important;
+  }
+}
+
+.page__taxonomy-item.SelectedPapers {
+  background-color: $stanford-sky !important;
+
+  &:hover {
+    color: #fff;
+    background-color: $link-color !important;
+  }
+}
+
+/*
+   Comments
+   ========================================================================== */
+
+.page__comments {
+  @include full();
+}
+
+.page__comments-title {
+  margin-top: 2rem;
+  margin-bottom: 10px;
+  padding-top: 2rem;
+  font-size: $type-size-6;
+  border-top: 1px solid $border-color;
+  text-transform: uppercase;
+}
+
+.page__comments-form {
+  padding: 1em;
+  background: $lighter-gray;
+  transition: $global-transition;
+
+  &.disabled {
+    input,
+    button,
+    textarea,
+    label {
+      pointer-events: none;
+      cursor: not-allowed;
+      filter: alpha(opacity=65);
+      box-shadow: none;
+      opacity: 0.65;
+    }
+  }
+}
+
+.comment {
+  @include clearfix();
+  margin: 1em 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.comment__avatar-wrapper {
+  float: left;
+  width: 60px;
+  height: 60px;
+
+  @include breakpoint($large) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.comment__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  @include breakpoint($large) {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    border: 1px solid $border-color;
+  }
+}
+
+.comment__content-wrapper {
+  float: right;
+  width: calc(100% - 60px);
+
+  @include breakpoint($large) {
+    width: calc(100% - 100px);
+  }
+}
+
+.comment__author {
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.comment__date {
+  @extend .page__meta;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/*
+   Related
+   ========================================================================== */
+
+.page__related {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
+  @include clearfix();
+  float: left;
+
+  @include breakpoint($large) {
+    @include pre(2.5 of 12);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.page__related-title {
+  margin-bottom: 10px;
+  font-size: $type-size-6;
+  text-transform: uppercase;
+}
+
+/* makes a new link class*/
+.mdLink {
+  color: #0085a1;
+}
+.mdLink:hover,
+.mdLink:focus {
+  text-decoration: underline;
+  color: #00596b;
+}
+
+/* for summary lnks*/
+.info {
+  color: #aac3c6;
+}
+
+.infoLink {
+  color: #aac3c6;
+}
+.infoLink:hover,
+.infoLink:focus {
+  text-decoration: underline;
+  color: #00596b;
+}
+
+/* Lists : add more space between */
+body li {
+  margin: 10px 0;
+}
+
+/* adds custom tables based on macdown   */
+table {
+  padding: 0;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+}
+
+table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  margin: 0;
+  padding: 6px 13px;
+}
+table tr td {
+  border: 1px solid #cccccc;
+  margin: 0;
+  padding: 6px 13px;
+}
+table tr th :first-child,
+table tr td :first-child {
+  margin-top: 0;
+}
+table tr th :last-child,
+table tr td :last-child {
+  margin-bottom: 0;
+}
+
+/* special words for special types */
+/* Intuition */
+.intuition {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #9b01de;
+}
+
+.intuitionText {
+  color: #9b01de;
+}
+
+.intuitionBoxed {
+  border: 1px dashed #9b01de;
+  padding: 17px;
+}
+
+/* Example */
+
+.example {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #9dcb05;
+}
+
+.exampleText {
+  color: #9dcb05;
+}
+
+.exampleBoxed {
+  border: 1px dashed #9dcb05;
+  padding: 17px;
+}
+
+/* Advantage */
+
+.advantage {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0dbf01;
+}
+
+.advantageText {
+  color: #0dbf01;
+}
+
+.advantageBoxed {
+  border: 1px dashed #0dbf01;
+  padding: 17px;
+}
+
+/* Disadvantage */
+
+.disadvantage {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ed0101;
+}
+
+.disadvantageText {
+  color: #ed0101;
+}
+
+.disadvantageBoxed {
+  border: 1px dashed #ed0101;
+  padding: 17px;
+}
+
+/* Practice */
+
+.practice {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #4997fe;
+}
+
+.practiceText {
+  color: #4997fe;
+}
+
+.practiceBoxed {
+  border: 1px dashed #4997fe;
+  padding: 17px;
+}
+
+/* Notes */
+
+.note {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #c89917;
+}
+
+.noteText {
+  color: #c89917;
+}
+
+.noteBoxed {
+  border: 1px dashed #c89917;
+  padding: 17px;
+}
+
+/* Resources */
+
+.resources {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #c4c4c4;
+}
+
+.resourcesText {
+  color: #c4c4c4;
+}
+
+.resourcesBoxed {
+  border: 1px dashed #c4c4c4;
+  padding: 17px;
+}
+
+/* Compare */
+
+.compare {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #a47676;
+}
+
+.compareText {
+  color: #a47676;
+}
+
+.compareBoxed {
+  border: 1px dashed #a47676;
+  padding: 17px;
+}
+
+/* images */
+body img:not(.emoji) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.miniWrap {
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.smallWrap {
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mediumWrap {
+  max-width: 477px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Quick annotations for algorithms */
+.centerContainer {
+  text-align: center;
+  float: none;
+  margin: 0 auto;
+}
+
+/* Justufy */
+p {
+  text-align: justify;
+}
+li {
+  text-align: justify;
+}
+
+/* Blockquotes */
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+/* For Dropdown menus */
+details summary {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #999999;
+}
+
+details summary:hover,
+details summary:focus,
+details[open] summary {
+  text-decoration: underline;
+  color: black;
+}

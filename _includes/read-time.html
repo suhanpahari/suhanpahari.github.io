@@ -1,0 +1,15 @@
+{% if current.words %}
+  {% assign words = current.words %}
+{% elsif current.read_time %}
+  {% assign words = current.content | strip_html | number_of_words %}
+{% endif %}
+
+{% if site.words_per_minute %}
+  {% if words < 360 %}
+	  1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+	{% else %}
+	  {{ words | divided_by:site.words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+	{% endif %}
+{% else %}
+  {{ site.data.ui-text[site.locale].undefined_wpm | "Undefined parameter words_per_minute at _config.yml" }}
+{% endif %}
