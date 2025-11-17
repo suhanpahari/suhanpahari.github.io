@@ -11,7 +11,7 @@ redirect_from:
 
 Updated March 2025.
 
-Education 🎓
+Education
 ======
 
 <!-- B.Tech -->
@@ -36,7 +36,7 @@ Education 🎓
 <hr style="height:2em; margin:0em; visibility:hidden;" />
 
 
-Work Experience 💼
+Work Experience
 ======
 
 <!-- NIT Warangal -->
