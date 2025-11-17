@@ -64,7 +64,7 @@ Work Experience
 <div style="display:flex;">
 
   <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/bahas.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+    <img src="{{ site.url }}/images/resume/bahash.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
 
   <div style="flex:4;">
