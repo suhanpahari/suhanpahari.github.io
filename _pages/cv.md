@@ -48,7 +48,7 @@ Work Experience
 
   <div style="flex:4;">
     <p style="margin:0px">
-      <b style="font-size: 130%;">NIT Warangal — Department of Artificial Intelligence</b>
+      <b style="font-size: 130%;">NIT Warangal — Department of AI</b>
       <span style="float:right; font-size:80%; color:#7a7a7a;">May 2025 – June 2025</span>
     </p>
     Research Intern & Team Lead
