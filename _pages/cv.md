@@ -82,7 +82,7 @@ Work Experience
 <hr style="height:2em; margin:0em; visibility:hidden;" />
 
 
-Projects 🧪
+Projects
 ======
 
 <ul>
@@ -116,7 +116,7 @@ Projects 🧪
 <hr style="height:2em; margin:0em; visibility:hidden;" />
 
 
-Awards & Achievements 🌟
+Awards & Achievements
 ======
 
 <ul>
