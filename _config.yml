@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Yann Dubois"
+title                    : "Soham Pahari"
 title_separator          : "-"
-name                     : &name "Yann Dubois"
-description              : &description "AI Research @ OpenAI"
-url                      : https://yanndubs.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Soham Pahari"
+description              : &description "Bachelors Student in Data Scince"
+url                      : https://suhanpahari.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "YannDubs/YannDubs.github.io"
+repository               : "suhanpahari/suhanpahari.github.io"
 teaser                   : "teaser.jpg" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160 # used to compute the reading time of each article
@@ -24,7 +24,7 @@ search                   : true # #default false
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : "yanndubs"
+    shortname            : "soham"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -58,7 +58,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter "yanndubs"
+  username               : &twitter "sohampahari"
 facebook:
   username               :
   app_id                 :
@@ -70,8 +70,8 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/yanndubs"
-    - "https://www.linkedin.com/in/duboisyann/"
+    - "https://twitter.com/sohampahari"
+    - "https://www.linkedin.com/in/sohampahari/"
 
 
 # Analytics
@@ -85,12 +85,12 @@ analytics:
 author:
   name             : *name
   avatar           : "profile.jpg"
-  bio              : "PhD student in Machine Learning"
-  location         : "San Francisco, California"
+  bio              : "Bachelors Student in Data Science"
+  location         : "Dehradun, India"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.com/citations?user=bfM1kzAAAAAJ&hl"
-  email            : yanndubois96@gmail.com
+  googlescholar    : "https://scholar.google.com/citations?user=rDI-vd0AAAAJ&hl=en"
+  email            : paharisoham@gmail.com
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -99,17 +99,17 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "yanndubs"
+  github           : "suhanpahari"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : duboisyann
-  orcid            : #"http://orcid.org/yourorcidurl"
+  linkedin         : sohampahari
+  orcid            : "https://orcid.org/0009-0008-5061-0030"
   pinterest        :
   soundcloud       :
-  stackoverflow    : 6232494/yann-dubois
+  stackoverflow    : 
   steam            :
   tumblr           :
   twitter          : *twitter
