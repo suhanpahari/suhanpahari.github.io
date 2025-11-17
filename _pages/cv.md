@@ -152,10 +152,10 @@ Awards & Achievements
     <span style="float:right; font-size:80%; color:#7a7a7a;">2025</span>
   </li>
 
-  <li>
+  <!-- <li>
     <b>Scored 99.28 Percentile in CUET Mathematics</b>
     <span style="float:right; font-size:80%; color:#7a7a7a;">2022</span>
-  </li>
+  </li> -->
 
   <li>
     <b>Completed — Decision Making & Reinforcement Learning (Columbia University)</b>
