@@ -7,6 +7,7 @@ pub_date:       "2025"
 abstract: >-
   An air-quality forecasting model combining LOESS-ARIMA decomposition with a multi-scale CNN-BiLSTM
   and residual-gated attention.
+cover:          /assets/images/covers/air.png
 authors:
 - S. Pahari
 - S. C. Kumain

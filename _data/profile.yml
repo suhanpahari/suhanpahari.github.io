@@ -19,9 +19,10 @@ short_bio: >-
   <p>
     I am a <strong>Pre-Doctoral Research Assistant</strong> at the HR Lab,
     <a href="https://www.isical.ac.in/" target="_blank">Indian Statistical Institute (ISI), Kolkata</a>,
-    under the supervision of Prof. Ujjwal Bhattacharya. I work on <strong>4D world models</strong> and
-    <strong>3D computer vision</strong> for ADAS (advanced driver-assistance systems), in collaboration with
-    Sudip Das from Valeo Brain (PI).
+    under the supervision of <a href="https://www.isical.ac.in/~ujjwal/" target="_blank">Prof. Ujjwal Bhattacharya</a>.
+    I work on <strong>4D world models</strong> and <strong>3D computer vision</strong> for ADAS (advanced
+    driver-assistance systems), in collaboration with Sudip Das from
+    <a href="https://www.valeo.com/en/brain-division/" target="_blank">Valeo Brain</a> (PI).
   </p>
   <p>
     My research is broadly in <strong>computer vision</strong> and its physical-world applications: LiDAR/point-cloud
@@ -39,9 +40,10 @@ education:
 - name: University of Petroleum and Energy Studies (UPES)
   logo: /assets/images/badges/upes.png
   position: >-
-    B.Tech, Computer Science (Data Science) · GPA 3.12 / 4.00 <br/>
+    B.Tech, Computer Science (Data Science) <br/>
     Thesis: Learning Human Visual Attention on 3D Surfaces through Geometry-Queried Semantic Priors
-    (Advisor: Dr. Sandeep Chand Kumain)
+    (Advisor: Dr. Sandeep Chand Kumain) <br/>
+    <span class="text-muted">GPA 3.12 / 4.00</span>
   date: Sep. 2022 - 2026
 
 experience:
@@ -49,19 +51,11 @@ experience:
   logo: /assets/images/badges/isi.png
   position: Pre-Doctoral Research Assistant — 4D World Models & 3D Computer Vision for ADAS
   date: 2026 - present
-- name: NIT Warangal (with Prof. Mettu Srinivas)
+- name: With Prof. Mettu Srinivas (NIT Warangal)
   logo: /assets/images/badges/nitw.png
   position: Machine Learning Research Intern — Multimodal Learning & AI for Science
-  date: 2025 - present
+  date: 2024 - Jan. 2025
 - name: UPES, Dehradun (with Prof. Sandeep Chand Kumain)
   logo: /assets/images/badges/upes.png
   position: Bachelor's Research — 3D Attention, Multimodal & Applied ML
   date: 2024 - 2026
-
-awards:
-- name: Accepted (~20%), Eastern European Machine Learning Summer School (EEML), Montenegro
-  date: 2026
-- name: First-author peer-reviewed work at BMVC and in Springer journals (IJMIR, JCAMD)
-  date: 2026
-- name: 99.28 Percentile (Mathematics), Common University Entrance Test (CUET), India
-  date: 2022

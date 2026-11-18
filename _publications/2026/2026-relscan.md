@@ -6,9 +6,11 @@ pub:            "Manuscript in preparation (draft ready)"
 pub_date:       "2026"
 abstract: >-
   Open-vocabulary object relation prediction for 3D scans, resolved at query time via semantic cracking.
+cover:          /assets/images/covers/real_scan.jpg
 authors:
 - S. Pahari
 - M. Srinivas
 - U. Bhattacharya
-links: {}
+links:
+  Project: https://sohamrsch.github.io/relscan/
 ---
