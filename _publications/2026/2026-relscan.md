@@ -13,4 +13,5 @@ authors:
 - U. Bhattacharya
 links:
   Project: https://sohamrsch.github.io/relscan/
+  Code: https://github.com/suhanpahari/OpenSNAP
 ---
