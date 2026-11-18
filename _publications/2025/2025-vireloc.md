@@ -6,6 +6,7 @@ pub:            "Preprint"
 pub_date:       "2025"
 abstract: >-
   GPS-free ground-to-aerial localization and planning via reasoning-guided cross-view matching.
+cover:          /assets/images/covers/vireloc.png
 authors:
 - S. Pahari
 - M. Srinivas
