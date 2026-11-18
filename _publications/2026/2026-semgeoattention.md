@@ -13,5 +13,6 @@ authors:
 - S. Pahari
 - S. C. Kumain
 links:
+  Project: https://sohamrsch.github.io/semgeoattn/
   arXiv: https://arxiv.org/abs/2602.06419
 ---

@@ -3,32 +3,32 @@ secondary_name: ""
 navbar_name: "Soham Pahari"
 
 positions:
-- name: Prospective Postgraduate Student
-- name: Computer Vision · 3D Scene Understanding
+- name: Pre-Doctoral Research Assistant, HR Lab, ISI Kolkata
+- name: Computer Vision · 4D World Models · 3D Scene Understanding
 
 email: "paharisoham@gmail.com"
 cv_link: /files/Resume.pdf
 gscholar: rDI-vd0AAAAJ
 github: sohampahari
-# twitter: your_twitter_id
+twitter: sohampahari
 # linkedin: your-linked-in-id
 # orcid: 0000-0000-0000-0000
 
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a final-year B.Tech student in Computer Science (Data Science) at
-    <a href="https://www.upes.ac.in/" target="_blank">UPES, Dehradun</a>, and a prospective postgraduate
-    student based in Kolkata, India. My research is broadly in <strong>computer vision</strong> and its
-    physical-world applications.
+    I am a <strong>Pre-Doctoral Research Assistant</strong> at the HR Lab,
+    <a href="https://www.isical.ac.in/" target="_blank">Indian Statistical Institute (ISI), Kolkata</a>,
+    under the supervision of Prof. Ujjwal Bhattacharya. I work on <strong>4D world models</strong> and
+    <strong>3D computer vision</strong> for ADAS (advanced driver-assistance systems), in collaboration with
+    Sudip Das from Valeo Brain (PI).
   </p>
   <p>
-    I currently work on 3D scene understanding and cooperative perception for autonomous driving as a
-    Pre-Graduate Research Assistant at <a href="https://www.isical.ac.in/" target="_blank">ISI, Kolkata</a>
-    (with Prof. Ujjwal Bhattacharya and collaborators at Valeo India), and on multimodal learning and AI for
-    science with Prof. Mettu Srinivas at NIT Warangal. My interests span LiDAR/point-cloud and camera-only
-    perception, multi-agent cooperative perception with geometric uncertainty and Bayesian fusion, multi-view
-    geometry and cross-view localization, and multimodal representation learning.
+    My research is broadly in <strong>computer vision</strong> and its physical-world applications: LiDAR/point-cloud
+    and camera-only perception for autonomous driving, multi-agent cooperative perception with geometric
+    uncertainty and Bayesian fusion, multi-view geometry and cross-view localization, and multimodal
+    representation learning. I completed my B.Tech in Computer Science (Data Science) at
+    <a href="https://www.upes.ac.in/" target="_blank">UPES, Dehradun</a>.
   </p>
 
 portrait_url: /images/profile.jpg
@@ -37,6 +37,7 @@ portrait_url: /images/profile.jpg
 
 education:
 - name: University of Petroleum and Energy Studies (UPES)
+  logo: /assets/images/badges/upes.png
   position: >-
     B.Tech, Computer Science (Data Science) · GPA 3.12 / 4.00 <br/>
     Thesis: Learning Human Visual Attention on 3D Surfaces through Geometry-Queried Semantic Priors
@@ -44,13 +45,16 @@ education:
   date: Sep. 2022 - 2026
 
 experience:
-- name: ISI, Kolkata (with Prof. Ujjwal Bhattacharya & Valeo India)
-  position: Pre-Graduate Research Assistant — 3D Computer Vision & Cooperative Perception
+- name: HR Lab, ISI Kolkata (with Prof. Ujjwal Bhattacharya; Sudip Das, Valeo Brain — PI)
+  logo: /assets/images/badges/isi.png
+  position: Pre-Doctoral Research Assistant — 4D World Models & 3D Computer Vision for ADAS
   date: 2026 - present
 - name: NIT Warangal (with Prof. Mettu Srinivas)
+  logo: /assets/images/badges/nitw.png
   position: Machine Learning Research Intern — Multimodal Learning & AI for Science
   date: 2025 - present
 - name: UPES, Dehradun (with Prof. Sandeep Chand Kumain)
+  logo: /assets/images/badges/upes.png
   position: Bachelor's Research — 3D Attention, Multimodal & Applied ML
   date: 2024 - 2026
 
