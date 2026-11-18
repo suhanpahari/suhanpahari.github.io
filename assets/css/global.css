@@ -1,0 +1,152 @@
+@charset "utf-8";
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    padding-top: 5.0rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 700;
+}
+
+.card {
+    border-radius: 0.8rem!important;
+}
+
+.card-img-overlay {
+    border-radius: 0.8rem!important;
+}
+
+.rounded-xl {
+    border-radius: 0.8rem!important;
+}
+
+.rounded-xl-bottom {
+    border-bottom-right-radius: 0.8rem !important;
+    border-bottom-left-radius: 0.8rem !important;
+}
+
+.rounded-xl-top {
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+}
+
+
+.text-profile-position {
+    font-weight: 400;
+}
+
+.text-profile-bio {
+    /* font-family: "Raleway"; */
+    font-weight: 400;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.inline-badge {
+    height: 16px;
+    vertical-align: -10%;
+    margin-right: 2px;
+    line-break: unset;
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
+.cover-image {
+    width: 180px;
+    max-height: 120px;
+}
+
+.abstract-body {
+    min-height: 100px;
+}
+
+img.lazy {
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    min-height: 80px;
+}
+
+div.lazy {
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    min-height: 80px;
+}
+
+.badge-publication {
+    font-size: 100%;
+}
+
+.email-text {
+    font-family: Source Code Pro, monospace;
+}
+
+.carousel button {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.carousel button:focus {
+    outline: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+.carousel-indicators button {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    margin: 0 3px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+}
+
+.carousel-indicators button.active {
+    opacity: 1;
+}
+
+.carousel-indicators button:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-control-prev:focus-visible .carousel-control-prev-icon,
+.carousel-control-next:focus-visible .carousel-control-next-icon {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel-indicators button {
+        transition: none;
+    }
+}

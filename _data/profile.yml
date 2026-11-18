@@ -1,0 +1,63 @@
+primary_name: "Soham Pahari"
+secondary_name: ""
+navbar_name: "Soham Pahari"
+
+positions:
+- name: Prospective Postgraduate Student
+- name: Computer Vision · 3D Scene Understanding
+
+email: "paharisoham@gmail.com"
+cv_link: /files/Resume.pdf
+gscholar: rDI-vd0AAAAJ
+github: sohampahari
+# twitter: your_twitter_id
+# linkedin: your-linked-in-id
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am a final-year B.Tech student in Computer Science (Data Science) at
+    <a href="https://www.upes.ac.in/" target="_blank">UPES, Dehradun</a>, and a prospective postgraduate
+    student based in Kolkata, India. My research is broadly in <strong>computer vision</strong> and its
+    physical-world applications.
+  </p>
+  <p>
+    I currently work on 3D scene understanding and cooperative perception for autonomous driving as a
+    Pre-Graduate Research Assistant at <a href="https://www.isical.ac.in/" target="_blank">ISI, Kolkata</a>
+    (with Prof. Ujjwal Bhattacharya and collaborators at Valeo India), and on multimodal learning and AI for
+    science with Prof. Mettu Srinivas at NIT Warangal. My interests span LiDAR/point-cloud and camera-only
+    perception, multi-agent cooperative perception with geometric uncertainty and Bayesian fusion, multi-view
+    geometry and cross-view localization, and multimodal representation learning.
+  </p>
+
+portrait_url: /images/profile.jpg
+# portrait_caption: >-
+#   (optional caption)
+
+education:
+- name: University of Petroleum and Energy Studies (UPES)
+  position: >-
+    B.Tech, Computer Science (Data Science) · GPA 3.12 / 4.00 <br/>
+    Thesis: Learning Human Visual Attention on 3D Surfaces through Geometry-Queried Semantic Priors
+    (Advisor: Dr. Sandeep Chand Kumain)
+  date: Sep. 2022 - 2026
+
+experience:
+- name: ISI, Kolkata (with Prof. Ujjwal Bhattacharya & Valeo India)
+  position: Pre-Graduate Research Assistant — 3D Computer Vision & Cooperative Perception
+  date: 2026 - present
+- name: NIT Warangal (with Prof. Mettu Srinivas)
+  position: Machine Learning Research Intern — Multimodal Learning & AI for Science
+  date: 2025 - present
+- name: UPES, Dehradun (with Prof. Sandeep Chand Kumain)
+  position: Bachelor's Research — 3D Attention, Multimodal & Applied ML
+  date: 2024 - 2026
+
+awards:
+- name: Accepted (~20%), Eastern European Machine Learning Summer School (EEML), Montenegro
+  date: 2026
+- name: First-author peer-reviewed work at BMVC and in Springer journals (IJMIR, JCAMD)
+  date: 2026
+- name: 99.28 Percentile (Mathematics), Common University Entrance Test (CUET), India
+  date: 2022
